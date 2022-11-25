@@ -17,10 +17,10 @@
     </form:select> <br><br>
 
     Which car do you want?
-<%--    BMW <form:radiobutton path="carBrand" value="BMW"/>--%>
-<%--    Audi <form:radiobutton path="carBrand" value="Audi"/>--%>
-<%--    Mercedes <form:radiobutton path="carBrand" value="Mercedes"/> <br><br>--%>
-    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/> <br><br>
+
+    Foreign language(s)
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
 
         <input type="submit" value="Go!">
 </form:form>
@@ -28,3 +28,20 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
