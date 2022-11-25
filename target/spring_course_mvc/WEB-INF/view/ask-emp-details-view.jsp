@@ -13,11 +13,14 @@
     Salary <form:input path="salary"/> <br><br>
 
     Department <form:select path="department">
-<%--    <form:option value="Information technology" label="IT"/>--%>
-<%--    <form:option value="Human Resources" label="HR"/>--%>
-<%--    <form:option value="Sales" label="Sales"/>--%>
     <form:options items="${employee.departments}"/>
     </form:select> <br><br>
+
+    Which car do you want?
+<%--    BMW <form:radiobutton path="carBrand" value="BMW"/>--%>
+<%--    Audi <form:radiobutton path="carBrand" value="Audi"/>--%>
+<%--    Mercedes <form:radiobutton path="carBrand" value="Mercedes"/> <br><br>--%>
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
 
         <input type="submit" value="Go!">
 </form:form>
